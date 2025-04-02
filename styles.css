@@ -1,90 +1,116 @@
-/* General page styling */
+/* Task Assigned To: Dylan Johnston */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* GENERAL STYLING */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #FFF9C4; /* Soft light yellow background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-/* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background: #FFF176; /* Light pastel yellow */
+  border-bottom: 1px solid #FDD835;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Styling for team logo image */
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #5D4037;
+}
+
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
-    margin-top: 10px;
-}
-
-/* Menu button styling */
-header nav {
-    margin-top: 10px;
+  width: 120px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 2px solid #FDD835;
+  border-radius: 8px;
+  background: #FFFFFF;
 }
 
 header nav button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 5px;
+  background: #FBC02D; /* Medium yellow */
+  border: none;
+  color: #5D4037;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 header nav button:hover {
-    background: #0056b3;
+  background: #F9A825;
 }
 
-/* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Card styling for individual team bios */
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 40px);
-    text-align: center;
-    transition: transform 0.2s;
+  background: #F8BBD0; /* Soft pink */
+  border: 1px solid #F48FB1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    margin: 0 0 10px;
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #A5D6A7; /* Soft green */
+  margin: 0 auto 10px;
 }
 
-/* Initially hide bio details */
+.moodboard {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.card button {
+  background: #81C784; /* Light green */
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #66BB6A;
+}
+
 .bio {
-    display: none;
-    margin-top: 10px;
-    color: #555;
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #FFF;
 }
 
-/* Button styling */
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0056b3;
+.card p {
+  margin: 10px 0;
 }
